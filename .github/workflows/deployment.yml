@@ -196,7 +196,7 @@ jobs:
         run: script/release --local "$TAG_NAME" --platform windows
       - name: Set up MSBuild
         id: setupmsbuild
-        uses: microsoft/setup-msbuild@6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce
+        uses: microsoft/setup-msbuild@30375c66a4eea26614e0d39710365f22f8b0af57
       - name: Build MSI
         shell: bash
         env:
